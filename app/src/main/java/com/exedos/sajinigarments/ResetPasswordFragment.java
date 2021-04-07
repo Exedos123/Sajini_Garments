@@ -116,6 +116,8 @@ public class ResetPasswordFragment extends Fragment {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()){
+                                    emailIconText.setVisibility(View.VISIBLE);
+
                                     Toast.makeText(getActivity(),"email sent successfully!",Toast.LENGTH_LONG).show();
 
                                 }else{

@@ -147,6 +147,7 @@ public class HomeFragment extends Fragment {
           categoryRecyclerView.setVisibility(View.VISIBLE);
           mulRecycler.setVisibility(View.VISIBLE);
           retryBtn.setVisibility(View.GONE);
+          homeMarquee.setVisibility(View.VISIBLE);
 
 
 
@@ -178,6 +179,7 @@ public class HomeFragment extends Fragment {
           retryBtn.setVisibility(View.VISIBLE);
           categoryRecyclerView.setVisibility(View.GONE);
           mulRecycler.setVisibility(View.GONE);
+          homeMarquee.setVisibility(View.GONE);
 
 
       }
@@ -230,6 +232,7 @@ public class HomeFragment extends Fragment {
             MainActivity.drawer1.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
             categoryRecyclerView.setVisibility(View.GONE);
             mulRecycler.setVisibility(View.GONE);
+            homeMarquee.setVisibility(View.GONE);
             Glide.with(getContext()).load(R.drawable.nointernet_image).into(noInternetConnection);
             noInternetConnection.setVisibility(View.VISIBLE);
             retryBtn.setVisibility(View.VISIBLE);

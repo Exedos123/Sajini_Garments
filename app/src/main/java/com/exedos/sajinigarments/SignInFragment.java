@@ -209,7 +209,7 @@ public class SignInFragment extends Fragment {
                                 signInBtn.setEnabled(true);
                                 signInBtn.setTextColor(Color.rgb(255,255,255));
                                 String error = task.getException().getMessage();
-                                Toast.makeText(getActivity(), "error", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(), "Incorrect email or password!", Toast.LENGTH_SHORT).show();
                             }
 
                         }
