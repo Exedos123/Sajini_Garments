@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        app:itemTextColor="#7C0D0D"
+        app:itemIconTint="#71AF32">
+
+
+
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+
+     <!--   <item android:id="@+id/nav_info"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="About"/>
+
+        <item android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_twotone_shopping_bag_24"
+            android:title="My Orders"/>
+
+        <item android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="My Cart"/>
+
+        <item android:id="@+id/nav_wishlist"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="My Wishlist"/>
+
+
+            -->
+
+        <item android:id="@+id/nav_shop" android:checkable="false"
+            android:icon="@drawable/ic_baseline_shop_24"
+            android:title="Shop"/>
+
+        <item android:id="@+id/nav_account"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="My Account"/>
+
+        <item android:id="@+id/nav_Contact"
+            android:icon="@drawable/ic_baseline_local_phone_24"
+            android:title="Contact"/>
+
+        <item android:id="@+id/nav_Signout"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:title="Sign Out"/>
+
+    </group>
+</menu>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp">
+
+
+    <ImageView
+        android:id="@+id/order_details_product_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder2" />
+
+    <TextView
+        android:id="@+id/order_details_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Custom Shirt"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order_details_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Rs.599"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/order_details_product_image"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/order_details_product_quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Qty:1"
+        android:textColor="#000000"
+        android:backgroundTint="#000000"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/order_details_product_image"
+        app:layout_constraintEnd_toStartOf="@+id/order_details_product_image" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_details_product_image" />
+
+    <ImageView
+        android:id="@+id/orderd_indicator"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/selected_dot"
+        app:tint="#B6B0B0" />
+
+    <ProgressBar
+        android:id="@+id/ordered_packed_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:progress="100"
+        android:progressTint="#B6B0B0"
+        android:rotation="90"
+        android:transformPivotX="0dp"
+        app:layout_constraintStart_toStartOf="@+id/orderd_indicator"
+        app:layout_constraintTop_toTopOf="@+id/orderd_indicator" />
+
+    <ImageView
+        android:id="@+id/packed_indicator"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderd_indicator"
+        app:tint="#B6B0B0"
+        app:srcCompat="@drawable/selected_dot" />
+
+    <ProgressBar
+        android:id="@+id/packed_shipped_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:progress="100"
+        android:progressTint="#B6B0B0"
+        android:rotation="90"
+        android:transformPivotX="0dp"
+        app:layout_constraintStart_toStartOf="@+id/packed_indicator"
+        app:layout_constraintTop_toTopOf="@+id/packed_indicator" />
+
+    <ImageView
+        android:id="@+id/shipped_indicator"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/packed_shipped_progress"
+        app:tint="#B6B0B0"
+        app:srcCompat="@drawable/selected_dot" />
+
+    <ProgressBar
+        android:id="@+id/shipped_delivered_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:progress="100"
+        android:progressTint="#B6B0B0"
+        android:rotation="90"
+        android:transformPivotX="0dp"
+        app:layout_constraintStart_toStartOf="@+id/shipped_indicator"
+        app:layout_constraintTop_toTopOf="@+id/shipped_indicator" />
+
+    <ImageView
+        android:id="@+id/delivered_indicator"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shipped_delivered_progress"
+        app:tint="#B6B0B0"
+        app:srcCompat="@drawable/selected_dot" />
+
+    <TextView
+        android:id="@+id/ordered_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Ordered"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/orderd_indicator"
+        app:layout_constraintStart_toEndOf="@+id/orderd_indicator"
+        app:layout_constraintTop_toTopOf="@+id/orderd_indicator" />
+
+    <TextView
+        android:id="@+id/ordered_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="wednesday,27 Jan 2021 - 10.00AM"
+        android:textSize="12sp"
+        android:textColor="#D1CCCC"
+
+        app:layout_constraintBottom_toBottomOf="@+id/ordered_packed_progress"
+        app:layout_constraintStart_toEndOf="@+id/ordered_title"
+        app:layout_constraintTop_toTopOf="@+id/ordered_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ordered_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your order has been placed"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/ordered_title"
+        app:layout_constraintTop_toBottomOf="@+id/ordered_packed_progress" />
+
+    <TextView
+        android:id="@+id/packed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Packed"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/packed_indicator"
+        app:layout_constraintStart_toEndOf="@+id/packed_indicator"
+        app:layout_constraintTop_toTopOf="@+id/packed_indicator" />
+
+    <TextView
+        android:id="@+id/packed_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="wednesday,27 Jan 2021 - 10.00AM"
+        android:textSize="12sp"
+        android:textColor="#D1CCCC"
+        app:layout_constraintBottom_toBottomOf="@+id/packed_title"
+        app:layout_constraintStart_toEndOf="@+id/packed_title"
+        app:layout_constraintTop_toBottomOf="@+id/ordered_body"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/packed_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your order has been packed"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/packed_title"
+        app:layout_constraintTop_toBottomOf="@+id/packed_title" />
+
+    <TextView
+        android:id="@+id/shipping_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Shipping"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/shipped_indicator"
+        app:layout_constraintStart_toEndOf="@+id/shipped_indicator"
+        app:layout_constraintTop_toTopOf="@+id/shipped_indicator" />
+
+    <TextView
+        android:id="@+id/shipping_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="wednesday,27 Jan 2021 - 10.00AM"
+        android:textSize="12sp"
+        android:textColor="#D1cccc"
+        app:layout_constraintBottom_toBottomOf="@+id/shipping_title"
+        app:layout_constraintStart_toEndOf="@+id/shipping_title"
+        app:layout_constraintTop_toTopOf="@+id/shipping_title" />
+
+    <TextView
+        android:id="@+id/shipping_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="You order has been shipped"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/shipping_title"
+        app:layout_constraintTop_toBottomOf="@+id/shipping_title" />
+
+    <TextView
+        android:id="@+id/Delivered_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Delivered"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/delivered_indicator"
+        app:layout_constraintStart_toEndOf="@+id/delivered_indicator"
+        app:layout_constraintTop_toTopOf="@+id/delivered_indicator"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/delivered_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="wednesday,27 Jan 2021 - 10.00AM"
+        android:textSize="12sp"
+        android:textColor="#d1CCCC"
+        app:layout_constraintBottom_toBottomOf="@+id/Delivered_title"
+        app:layout_constraintStart_toEndOf="@+id/Delivered_title"
+        app:layout_constraintTop_toTopOf="@+id/Delivered_title" />
+
+    <TextView
+        android:id="@+id/delivered_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your ordered has been delivered"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/Delivered_title"
+        app:layout_constraintTop_toBottomOf="@+id/Delivered_title" />
+
+    <LinearLayout
+        android:id="@+id/rate_now_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <ImageView
+            android:id="@+id/ratingstar2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_star_24"
+            app:tint="#bebebe" />
+
+        <ImageView
+            android:id="@+id/ratingstar3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_star_24"
+            app:tint="#bebebe" />
+
+        <ImageView
+            android:id="@+id/ratingstar1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_star_24"
+            app:tint="#bebebe" />
+
+        <ImageView
+            android:id="@+id/ratingstar4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_star_24"
+            app:tint="#bebebe" />
+
+        <ImageView
+            android:id="@+id/ratingstar5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_star_24"
+            app:tint="#bebebe" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivered_body" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Ratings"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        tools:layout_editor_absoluteX="51dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

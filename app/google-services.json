@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "781279782975",
+    "project_id": "sajini-garments",
+    "storage_bucket": "sajini-garments.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781279782975:android:3a3b622ef901cb8e30708a",
+        "android_client_info": {
+          "package_name": "com.exedos.sajinigarments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781279782975-gv1m32p3mt66k3i6tpoaog339s6caoa0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-_keBRiK_9fJCutUgETxVkU3PWYcSw9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781279782975-gv1m32p3mt66k3i6tpoaog339s6caoa0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
